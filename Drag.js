@@ -23,6 +23,7 @@ Drag.prototype = {
     var pos = {x: 0, y: 0},
         transformValue = this.getStyle('transform');
 
+    //transform初始为none
     if(transformValue === 'none'){
         this.ele.style.transform = 'translate(0, 0)';
     }else{
