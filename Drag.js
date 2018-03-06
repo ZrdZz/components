@@ -1,4 +1,4 @@
-function Drag(ele){
+(function Drag(ele){
   this.ele = typeof ele === Object ? ele : document.getElementById(ele);
 
   //鼠标的初始位置
@@ -81,4 +81,6 @@ Drag.prototype = {
       document.removeEventListener('mouseup', end);
     }
   }
-}
+
+  window.Drag = Drag;
+})()
